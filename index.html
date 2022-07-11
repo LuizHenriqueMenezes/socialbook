@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SocialBook</title>
 
+    <link rel="shortcut icon" href="images/status-1.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/f999e84d6b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -23,8 +26,49 @@
                 <img src="images/search.png">
                 <input type="text" placeholder="Search">
             </div>
-            <div class="nav-user-icon online">
-                <img src="images/profile-pic.png">
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.jpeg">
+            </div>
+        </div>
+
+        <!-----------------Menu que aparece----------------->
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.jpeg">
+                    <div>
+                        <p>Luan Melância</p>
+                        <a href="#">Veja seu Perfil</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>De seu Feedback</p>
+                        <a href="#">Ajude-nos a Melhorar o Design das Notícias</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="setting-icon">
+                    <a href="#">Configurações & Privacidade <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="setting-icon">
+                    <a href="#">SOS & Suporte <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="setting-icon">
+                    <a href="#">Exibição & Funcionalidades<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="setting-icon">
+                    <a href="#"> Vazar <img src="images/arrow.png" width="10px"></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -49,7 +93,185 @@
             </div>
         </div>
         <!-----------------Main Content----------------->
-        <div class="main-content"></div>
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/calvo.PNG">
+                    <p>Calvo</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/kenny de mascára.png">
+                    <p>Kenny</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/luizz.jpeg">
+                    <p>Luiz</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/gabriel.jpeg">
+                    <p>Gabriel</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.jpeg">
+                    <div>
+                        <p>Luan Melância</p>
+                        <small>Publique <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="O que passa na melância, Luan?"></textarea>
+                    <div class="add-posts-links">
+                        <a href="#"><img src="images/live-video.png"> Ao vivo</a>
+                        <a href="#"><img src="images/photo.png"> Fotinhas</a>
+                        <a href="#"><img src="images/feeling.png"> Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/beazinha.PNG">
+                        <div>
+                            <p>Bea Feitosa vulgo beazinha da ZL</p>
+                            <span>June 11 2022, 15:55</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">gente coitado alguém sabe se é verdade? :( <a href="#">#Deus</a></p>
+                <img src="images/evaAdao.jfif" class="post-img">
+    
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 2230</div>
+                        <div><img src="images/comments.png"> 804</div>
+                        <div><img src="images/share.png"> 51</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.jpeg"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/mavi_linda_perfil.jpeg">
+                        <div>
+                            <p>Maria Vitória Linda Perfeita</p>
+                            <span>June 11 2022, 14:01</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Infelizmente o meu Santos tem um estádio menor que uma uva, que parece um banheiro. 
+                E pra piorar a sala de imprensa é um barbeiro. <a href="#">#Santos</a> <a href="#">#EsseAnoCai</a></p>
+                <img src="images/feed-image-1.PNG" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 10</div>
+                        <div><img src="images/share.png"> 2</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.jpeg"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/yaritza_papo_cabeca.PNG">
+                        <div>
+                            <p>Yaritza Papo Cabeça</p>
+                            <span>June 11 2022, 14:46</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">oi Luiz, tudo bem? Queria saber se aquele anão boliviano ainda tá a venda...se tiver, 
+                tem como ver a entrega pra mim, por favor? Eu pago parceladinho 🥰🥰</p>
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 10</div>
+                        <div><img src="images/comments.png"> 2</div>
+                        <div><img src="images/share.png"> 0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.jpeg"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/luizz.jpeg">
+                        <div>
+                            <p>Luiz Henrique Menezes</p>
+                            <span>June 11 2022, 14:54</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">VAI CORINTHIANS <a href="#">#Corinthians</a> <a href="#">#ChupaBocaJrs</a></p>
+                <img src="images/corinthianss.PNG" class="post-img">
+    
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 5230</div>
+                        <div><img src="images/comments.png"> 910</div>
+                        <div><img src="images/share.png"> 220</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.jpeg"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/kenny de mascára.png">
+                        <div>
+                            <p>Kenny de Mascára</p>
+                            <span>June 11 2022, 14:58</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Maskara Agiota, apenas.</p>
+                <img src="images/maskara agiota.PNG" class="post-img">
+    
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 16230</div>
+                        <div><img src="images/comments.png"> 1910</div>
+                        <div><img src="images/share.png"> 521</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.jpeg"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+
+
         <!-----------------Right Sidebar----------------->
         <div class="right-sidebar">
             <div class="sidebar-title">
@@ -58,28 +280,63 @@
             </div>
             <div class="event">
                 <div class="left-event">
-                    <h3>18</h3>
-                    <span>Março</span>
+                    <h3>22</h3>
+                    <span>Setembro</span>
                 </div>
                 <div class="right-event">
-                    <h4>Mídia Social</h4>
-                    <p>Willson Tech Park</p>
+                    <h4>Aniversario Luiz</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Neo Quimíca Arena</p>
                     <a href="#">Mais Infos</a>
                 </div>
             </div>
             <div class="event">
                 <div class="left-event">
-                    <h3>22</h3>
-                    <span>Setembro</span>
+                    <h3>31</h3>
+                    <span>Dezembro</span>
                 </div>
                 <div class="right-event">
-                    <h4>Aniversario</h4>
-                    <p>Luiz H. Menezes</p>
+                    <h4>Aniversario Mavi</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Vila Belmiro</p>
                     <a href="#">Mais Infos</a>
                 </div>
             </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/calvo.PNG">
+                </div>
+                <p>Mosqueteiro Calvo</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/kenny de mascára.png">
+                </div>
+                <p>Kenny de Mascára</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/luizz.jpeg">
+                </div>
+                <p>Luiz Henrique Menezes</p>
+            </div>
         </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2022 - LuizHenriqueMenezes on GitHub</p>
     </div>
     
+<script src="script.js"></script>
 </body>
 </html>
